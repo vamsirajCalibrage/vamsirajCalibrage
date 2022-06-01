@@ -44,6 +44,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -53,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 10, 2022 01:56:27 AM</span>
+			<span class='label blue darken-3 suite-start-time'>May 30, 2022 06:38:05 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +70,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -81,7 +83,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@FeatureGroup_Requirement</a></li>
-					<li><a href='#'>@SmokeTest1</a></li>
+					<li><a href='#'>@SmokeTest</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -122,10 +124,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -136,10 +138,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -152,10 +154,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>20</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='94.737%'><span class='strong'>36</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5.263%'>2</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -175,11 +177,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>feature to test Records SignOff in Link</span>
-						<span class='test-time'>May 10, 2022 01:56:31 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>feature to test login functionality</span>
+						<span class='test-time'>May 30, 2022 06:38:10 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,11 +193,11 @@
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@FeatureGroup_Requirement</span>
-		<span class='category label'>@SmokeTest1</span>
+		<span class='category label'>@SmokeTest</span>
 	</div>
-	<span class='duration right label'>0h 1m 7s+33ms</span>
+	<span class='duration right label'>0h 0m 21s+860ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate Records in card view</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate login is successful with valid credentials</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
@@ -242,69 +244,270 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='12' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Link_HomePage_Steps.User_click_on_Link_under_Hamburger_icon_in_webpage()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on Link under Hamburger icon in webpage</div>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@FeatureGroup_Requirement</span>
+		<span class='category label'>@SmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 7s+625ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate login functionality without user credentials</div>
+	</div>
+	<ul class='steps'>
+		<li test-id='15' class='node given pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_is_on_safetychain_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User is on Safetychain Login page</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='13' class='node * pass' status='pass'>
+		<li test-id='16' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='14' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Link_RecordsPage_Steps.User_click_on_Record_Under_Hamburger_in_Link_HomePage()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on Record Under Hamburger in Link HomePage</div>
+		<li test-id='17' class='node when pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_without_enters_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User without enters username and password</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='15' class='node * pass' status='pass'>
+		<li test-id='18' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='16' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Link_RecordsPage_Steps.User_click_on_Three_months_under_Record_Page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User click on Three months under Record Page</div>
+		<li test-id='19' class='node and pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User clicks on login button</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='17' class='node * pass' status='pass'>
+		<li test-id='20' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='18' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Link_RecordsPage_Steps.user_click_on_click_on_card_view_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User click on click on Card view button</div>
+		<li test-id='21' class='node then pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.validation_message_should_be_displayed()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then validation message should be displayed</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='19' class='node * pass' status='pass'>
+		<li test-id='22' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='20' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Link_RecordsPage_Steps.user_click_on_expand_icon_in_the_card()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on expand icon in the Card</div>
+	</ul>
+</div>
+<div class='scenario node' test-id='24' status='fail'>
+	<div class='category-list'>
+		<span class='category label'>@FeatureGroup_Requirement</span>
+		<span class='category label'>@SmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 1m 10s+207ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Validate login is unsuccessful with invalid username credentials</div>
+	</div>
+	<ul class='steps'>
+		<li test-id='26' class='node given pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_is_on_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User is on login page</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='21' class='node * pass' status='pass'>
+		<li test-id='27' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='22' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Link_RecordsPage_Steps.user_click_on_click_on_record_id_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User click on click on Record Id link</div>
+		<li test-id='28' class='node when pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_enters_invalid_username_and_valid_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User enters invalid username and valid password</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='23' class='node * pass' status='pass'>
+		<li test-id='29' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="../screenshots/embedded10.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='30' class='node and pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.clicks_on_login_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Clicks on login button</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='31' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='32' class='node then fail' status='fail'>
+			<div class="step-name" title="stepdefinition.LoginSteps.incorrect_user_name_validation_message_should_be_displayed()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then Incorrect User Name validation message should be displayed</div>
+			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Please try again.']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384020507d802a8129cd6dae265eba41, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Please try again.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50000}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50000/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384020507d802a8129cd6dae265eba41
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectusername(LoginPage.java:94)
+	at stepdefinition.LoginSteps.incorrect_user_name_validation_message_should_be_displayed(LoginSteps.java:64)
+	at ✽.Incorrect User Name validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:23)
+</textarea>
+		</li>
+		<li test-id='33' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded12.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='35' status='fail'>
+	<div class='category-list'>
+		<span class='category label'>@FeatureGroup_Requirement</span>
+		<span class='category label'>@SmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 1m 9s+825ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Validate login is unsuccessful with invalid password credentials</div>
+	</div>
+	<ul class='steps'>
+		<li test-id='37' class='node given pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_is_on_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User is on login page</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='38' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded13.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='39' class='node when pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_enters_valid_username_and_invalid_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User enters valid username and invalid password</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='40' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded14.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='41' class='node and pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.clicks_on_login_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Clicks on login button</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='42' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded15.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='43' class='node then fail' status='fail'>
+			<div class="step-name" title="stepdefinition.LoginSteps.incorrect_password_validation_message_should_be_displayed()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then Incorrect Password validation message should be displayed</div>
+			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a815902f7822b844ef1442c29295980, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55508/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a815902f7822b844ef1442c29295980
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectpassword(LoginPage.java:88)
+	at stepdefinition.LoginSteps.incorrect_password_validation_message_should_be_displayed(LoginSteps.java:69)
+	at ✽.Incorrect Password validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:30)
+</textarea>
+		</li>
+		<li test-id='44' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded16.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='46' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@FeatureGroup_Requirement</span>
+		<span class='category label'>@SmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 47s+751ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate passwordhelp link in login page</div>
+	</div>
+	<ul class='steps'>
+		<li test-id='48' class='node given pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_is_on_safetychain_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User is on Safetychain Login page</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='49' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded17.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='50' class='node when pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_clicks_on_passwordhelp_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User clicks on passwordhelp link</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='51' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded18.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='52' class='node then pass' status='pass'>
+			<div class="step-name" title="stepdefinition.LoginSteps.user_navigated_to_the_password_help_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User navigated to the Password Help page</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='53' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded19.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
@@ -354,13 +557,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@FeatureGroup_Requirement</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>3</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -374,13 +578,33 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 10, 2022 01:56:31 AM</td>
-										<td class='linked' test-id='1'>feature to test Records SignOff in Link</td>
+										<td>May 30, 2022 06:38:10 PM</td>
+										<td class='linked' test-id='1'>feature to test login functionality</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:38:10 PM</td>
+										<td class='linked' test-id='2'>Validate login is successful with valid credentials</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 10, 2022 01:56:31 AM</td>
-										<td class='linked' test-id='2'>Validate Records in card view</td>
+										<td>May 30, 2022 06:38:35 PM</td>
+										<td class='linked' test-id='13'>Validate login functionality without user credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:38:47 PM</td>
+										<td class='linked' test-id='24'>Validate login is unsuccessful with invalid username credentials</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:40:01 PM</td>
+										<td class='linked' test-id='35'>Validate login is unsuccessful with invalid password credentials</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:41:15 PM</td>
+										<td class='linked' test-id='46'>Validate passwordhelp link in login page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -390,15 +614,16 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@SmokeTest1</span>
+						<span class='category-name'>@SmokeTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>3</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -412,8 +637,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 10, 2022 01:56:31 AM</td>
-										<td class='linked' test-id='2'>Validate Records in card view</td>
+										<td>May 30, 2022 06:38:10 PM</td>
+										<td class='linked' test-id='2'>Validate login is successful with valid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:38:35 PM</td>
+										<td class='linked' test-id='13'>Validate login functionality without user credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:38:47 PM</td>
+										<td class='linked' test-id='24'>Validate login is unsuccessful with invalid username credentials</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:40:01 PM</td>
+										<td class='linked' test-id='35'>Validate login is unsuccessful with invalid password credentials</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:41:15 PM</td>
+										<td class='linked' test-id='46'>Validate passwordhelp link in login page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -430,7 +675,123 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 30, 2022 06:38:56 PM</td>
+										<td class='linked' test-id='32'>Then Incorrect User Name validation message should be displayed</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Please try again.']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384020507d802a8129cd6dae265eba41, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Please try again.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50000}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50000/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384020507d802a8129cd6dae265eba41
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectusername(LoginPage.java:94)
+	at stepdefinition.LoginSteps.incorrect_user_name_validation_message_should_be_displayed(LoginSteps.java:64)
+	at ✽.Incorrect User Name validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:23)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>May 30, 2022 06:40:10 PM</td>
+										<td class='linked' test-id='43'>Then Incorrect Password validation message should be displayed</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a815902f7822b844ef1442c29295980, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55508/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a815902f7822b844ef1442c29295980
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectpassword(LoginPage.java:88)
+	at stepdefinition.LoginSteps.incorrect_password_validation_message_should_be_displayed(LoginSteps.java:69)
+	at ✽.Incorrect Password validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:30)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -444,31 +805,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>38</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 10, 2022 01:56:27 AM</div>
+					<div class='panel-lead'>May 30, 2022 06:38:05 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 10, 2022 01:57:40 AM</div>
+			 		<div class='panel-lead'>May 30, 2022 06:42:05 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 13s+185ms</div>
+					<div class='panel-lead'>0h 3m 59s+473ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -485,20 +846,20 @@
 						</tr>
 						<tr>
 							<td>@FeatureGroup_Requirement</td>
-							<td>1</td>
-							<td>0</td>
+							<td>3</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
 									50%
 							</td>
 						</tr>
 						<tr>
-							<td>@SmokeTest1</td>
-							<td>1</td>
-							<td>0</td>
+							<td>@SmokeTest</td>
+							<td>3</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									60%
 							</td>
 						</tr>
 					</table>
@@ -513,38 +874,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
-				childCount: 1,
-				passChild: 1,
-				failChild: 0,
+				exceptionsParent: 1,
+				childCount: 5,
+				passChild: 3,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 20,
-				passGrandChild: 20,
-				failGrandChild: 0,
+				exceptionsChild: 2,
+				grandChildCount: 38,
+				passGrandChild: 36,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "feature to test Records SignOff in Link":67.033
+			        "feature to test login functionality":233.204
 			};
 		</script>
 	

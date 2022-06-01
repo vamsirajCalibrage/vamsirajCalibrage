@@ -1,16 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="72.781">
-<testcase classname="feature to test Records SignOff in Link" name="Validate Records in card view" time="72.552">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="238.913">
+<testcase classname="feature to test login functionality" name="Validate login is successful with valid credentials" time="27.366">
 <system-out><![CDATA[Given User is on login page.................................................passed
 When User enters username and password......................................passed
 And Clicks on login button..................................................passed
 Then User navigated to the home page........................................passed
-And User click on Link under Hamburger icon in webpage......................passed
-And User click on Record Under Hamburger in Link HomePage...................passed
-Then User click on Three months under Record Page...........................passed
-Then User click on click on Card view button................................passed
-And User click on expand icon in the Card...................................passed
-Then User click on click on Record Id link..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality" name="Validate login functionality without user credentials" time="11.425">
+<system-out><![CDATA[Given User is on Safetychain Login page.....................................passed
+When User without enters username and password..............................passed
+And User clicks on login button.............................................passed
+Then validation message should be displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality" name="Validate login is unsuccessful with invalid username credentials" time="74.273">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='Incorrect User Name / Password combination. Please try again.']&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [384020507d802a8129cd6dae265eba41, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Please try again.']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50000}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50000/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 384020507d802a8129cd6dae265eba41" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is on login page.................................................passed
+When User enters invalid username and valid password........................passed
+And Clicks on login button..................................................passed
+Then Incorrect User Name validation message should be displayed.............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Please try again.']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384020507d802a8129cd6dae265eba41, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Please try again.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50000}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50000/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384020507d802a8129cd6dae265eba41
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectusername(LoginPage.java:94)
+	at stepdefinition.LoginSteps.incorrect_user_name_validation_message_should_be_displayed(LoginSteps.java:64)
+	at ✽.Incorrect User Name validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="feature to test login functionality" name="Validate login is unsuccessful with invalid password credentials" time="73.871">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4a815902f7822b844ef1442c29295980, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55508/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4a815902f7822b844ef1442c29295980" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is on login page.................................................passed
+When User enters valid username and invalid password........................passed
+And Clicks on login button..................................................passed
+Then Incorrect Password validation message should be displayed..............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a815902f7822b844ef1442c29295980, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55508/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a815902f7822b844ef1442c29295980
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectpassword(LoginPage.java:88)
+	at stepdefinition.LoginSteps.incorrect_password_validation_message_should_be_displayed(LoginSteps.java:69)
+	at ✽.Incorrect Password validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:30)
+]]></failure>
+</testcase>
+<testcase classname="feature to test login functionality" name="Validate passwordhelp link in login page" time="51.763">
+<system-out><![CDATA[Given User is on Safetychain Login page.....................................passed
+When User clicks on passwordhelp link.......................................passed
+Then User navigated to the Password Help page...............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

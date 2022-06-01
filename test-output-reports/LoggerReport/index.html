@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,7 +103,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -113,7 +121,7 @@
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 						    	        <a class="dropdown-item" href="#"><span class="cf">@FeatureGroup_Requirement</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@SmokeTest1</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@SmokeTest</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -130,13 +138,13 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags="@FeatureGroup_Requirement"
 												devices="">
-												<span class="tt">05.10.2022 01:56:31</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[feature to test Records SignOff in Link] started</span>
+												<span class="tt">05.30.2022 18:38:10</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[feature to test login functionality] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
 												</span>
@@ -147,14 +155,14 @@
 												
 											</div>
 											<div class="st pass test l1" 
-												tags="@FeatureGroup_Requirement @SmokeTest1"
+												tags="@FeatureGroup_Requirement @SmokeTest"
 												devices="">
-												<span class="tt">05.10.2022 01:56:31</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:10</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Validate Records in card view] started</span>
+												<span class="tn">|---[Validate login is successful with valid credentials] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest1</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -165,12 +173,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:31</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:10</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on login page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:56:34</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:12</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on login page]</span>
 													
@@ -180,12 +188,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:34</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:56:34</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:12</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded1.png' src='../screenshots/embedded1.png'></span>
@@ -195,12 +203,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:34</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User enters username and password] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:56:40</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:17</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User enters username and password]</span>
 													
@@ -210,12 +218,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:40</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:17</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:56:40</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:18</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded2.png' src='../screenshots/embedded2.png'></span>
@@ -225,12 +233,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:40</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:18</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Clicks on login button] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:56:45</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:23</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Clicks on login button]</span>
 													
@@ -240,12 +248,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:45</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:23</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:56:45</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:23</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded3.png' src='../screenshots/embedded3.png'></span>
@@ -255,12 +263,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:45</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:23</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User navigated to the home page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:56:53</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:31</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User navigated to the home page]</span>
 													
@@ -270,29 +278,45 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:53</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:31</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:56:53</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:32</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded4.png' src='../screenshots/embedded4.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
+											<div class="st pass test l1" 
+												tags="@FeatureGroup_Requirement @SmokeTest"
+												devices="">
+												<span class="tt">05.30.2022 18:38:35</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Validate login functionality without user credentials] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:53</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:35</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on Link under Hamburger icon in webpage] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on Safetychain Login page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:56:57</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on Link under Hamburger icon in webpage]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on Safetychain Login page]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -300,12 +324,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:56:57</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:57:00</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded5.png' src='../screenshots/embedded5.png'></span>
@@ -315,14 +339,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:00</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on Record Under Hamburger in Link HomePage] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User without enters username and password] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:57:19</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on Record Under Hamburger in Link HomePage]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User without enters username and password]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -330,12 +354,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:19</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:57:20</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded6.png' src='../screenshots/embedded6.png'></span>
@@ -345,14 +369,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:20</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User click on Three months under Record Page] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User clicks on login button] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:57:31</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User click on Three months under Record Page]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User clicks on login button]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -360,12 +384,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:31</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:57:31</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:40</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded7.png' src='../screenshots/embedded7.png'></span>
@@ -375,14 +399,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:31</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:40</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User click on click on Card view button] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then validation message should be displayed] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:43</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User click on click on Card view button]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then validation message should be displayed]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -390,29 +414,45 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:43</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:43</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded8.png' src='../screenshots/embedded8.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
+											<div class="st fail test l1" 
+												tags="@FeatureGroup_Requirement @SmokeTest"
+												devices="">
+												<span class="tt">05.30.2022 18:38:47</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Validate login is unsuccessful with invalid username credentials] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:47</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on expand icon in the Card] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on login page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on expand icon in the Card]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on login page]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -420,12 +460,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:50</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded9.png' src='../screenshots/embedded9.png'></span>
@@ -435,14 +475,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:50</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User click on click on Record Id link] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User enters invalid username and valid password] started</span>
 												
 												<div class="st pass">
-													<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:55</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User click on click on Record Id link]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User enters invalid username and valid password]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -450,15 +490,371 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+												<span class="tt">05.30.2022 18:38:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">05.10.2022 01:57:38</span>&nbsp;
+													<span class="tt">05.30.2022 18:38:55</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded10.png' src='../screenshots/embedded10.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:38:55</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Clicks on login button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:38:56</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Clicks on login button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:38:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:38:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded11.png' src='../screenshots/embedded11.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:38:56</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Incorrect User Name validation message should be displayed] started</span>
+												
+												<div class="st fail">
+													<span class="tt">05.30.2022 18:39:57</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Incorrect User Name validation message should be displayed]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Please try again.']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384020507d802a8129cd6dae265eba41, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Please try again.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50000}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50000/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384020507d802a8129cd6dae265eba41
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectusername(LoginPage.java:94)
+	at stepdefinition.LoginSteps.incorrect_user_name_validation_message_should_be_displayed(LoginSteps.java:64)
+	at ✽.Incorrect User Name validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:23)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:39:57</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:39:57</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded12.png' src='../screenshots/embedded12.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l1" 
+												tags="@FeatureGroup_Requirement @SmokeTest"
+												devices="">
+												<span class="tt">05.30.2022 18:40:01</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Validate login is unsuccessful with invalid password credentials] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:01</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on login page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:40:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on login page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:40:04</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded13.png' src='../screenshots/embedded13.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User enters valid username and invalid password] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:40:09</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User enters valid username and invalid password]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:40:09</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded14.png' src='../screenshots/embedded14.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Clicks on login button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:40:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Clicks on login button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:40:10</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded15.png' src='../screenshots/embedded15.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:40:10</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Incorrect Password validation message should be displayed] started</span>
+												
+												<div class="st fail">
+													<span class="tt">05.30.2022 18:41:11</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Incorrect Password validation message should be displayed]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-ED9DCJS', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a815902f7822b844ef1442c29295980, findElement {using=xpath, value=//span[text()='Incorrect User Name / Password combination. Your account will be locked after 9 more invalid login attempt(s).']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55508/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a815902f7822b844ef1442c29295980
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.LoginPage.incorrectpassword(LoginPage.java:88)
+	at stepdefinition.LoginSteps.incorrect_password_validation_message_should_be_displayed(LoginSteps.java:69)
+	at ✽.Incorrect Password validation message should be displayed(file:///C:/Users/calibrage12/Downloads/com.calibrage.safetychain/com.calibrage.safetychain/features/Link_LoginPage.feature:30)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:41:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:41:11</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded16.png' src='../screenshots/embedded16.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@FeatureGroup_Requirement @SmokeTest"
+												devices="">
+												<span class="tt">05.30.2022 18:41:15</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Validate passwordhelp link in login page] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:41:15</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on Safetychain Login page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:41:18</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User is on Safetychain Login page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:41:18</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:41:18</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded17.png' src='../screenshots/embedded17.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:41:18</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User clicks on passwordhelp link] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:41:44</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User clicks on passwordhelp link]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:41:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:41:44</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded18.png' src='../screenshots/embedded18.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:41:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User navigated to the Password Help page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">05.30.2022 18:42:02</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User navigated to the Password Help page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">05.30.2022 18:42:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">05.30.2022 18:42:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefinition.Hooks.as(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded19.png' src='../screenshots/embedded19.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>

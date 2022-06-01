@@ -27,3 +27,15 @@ Feature: feature to test Records SignOff in Link
   Then User click on click on Card view button
   And User click on expand icon in the Card
   Then User click on click on Record Id link
+  
+  @SmokeTest2
+  Scenario: Validate Records in Spreadsheet view
+  Given User is on login page
+  When User enters username and password
+  And Clicks on login button
+  Then User navigated to the home page
+  And User click on Link under Hamburger icon in webpage
+  And User click on Record Under Hamburger in Link HomePage
+  Then User click on Spreadsheet view button
+  Then User validates DatePickers in Spreadsheetview Page
+  Then User validates Search box in Spreadsheetview Page

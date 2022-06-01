@@ -70,31 +70,15 @@ public class Link_ValidationsPage extends DriverFactory {
 	By Filter_BaseFilters_Forms_FormNameFilter = By.xpath("//input[@name='FormNameFilter']");
 	By Filter_BaseFilters_Forms_Download = By.xpath("//div[@id='Print']");
 	By Filter_BaseFilters_Forms_TotalRecordsPresent = By.xpath("//table[@id='dtFormList_']/tbody/tr[1]/td[4]");
-	
 	By Filter_BaseFilters_Resources = By.xpath("//div[@id='xFilterListxx']//span[text()='Resources'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterListxx']//span[text()='Resource'][@class='lead text-uppercase sc-gbl']");
-	
-	
 	By Filter_BaseFilters_Location = By.xpath("//div[@id='xFilterListxx']//span[text()='Locations'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterListxx']//span[text()='Location'][@class='lead text-uppercase sc-gbl']");
-	
-	
 	By Filter_BaseFilters_User = By.xpath("//div[@id='xFilterListxx']//span[text()='Users'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterListxx']//span[text()='User'][@class='lead text-uppercase sc-gbl']");
-	
-	
 	By Filter_AdditionalFilters_Identifiers = By.xpath("//div[@id='xFilterList2xx']//span[text()='Identifiers'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterList2xx']//span[text()='Identifier'][@class='lead text-uppercase sc-gbl']");
-	
-	
 	By Filter_AdditionalFilters_Program = By.xpath("//div[@id='xFilterList2xx']//span[text()='Programs'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterList2xx']//span[text()='Program'][@class='lead text-uppercase sc-gbl']");
-	
-	
 	By Filter_AdditionalFilters_Verifications = By.xpath("//div[@id='xFilterList2xx']//span[text()='Verifications'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterList2xx']//span[text()='Verification'][@class='lead text-uppercase sc-gbl']");
-
 	By Filter_Signed_Verified_By = By.xpath("//div[@id='xFilterList2xx']//span[text()='Signed / Verified By'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterList2xx']//span[text()='Signed / Verified By'][@class='lead text-uppercase sc-gbl']");
-	
 	By Filter_AdditionalFilters_RecordSearch = By.xpath("//div[@id='xFilterList2xx']//span[text()='Record Search']");
-	
-	
 	By Filter_AdditionalFilters_VoidedRecords = By.xpath("//div[@id='xFilterList2xx']//span[text()='Voided Records'][@class='lead text-uppercase sc-gbl']|//div[@id='xFilterList2xx']//span[text()='Voided Records'][@class='lead text-uppercase text-white sc-gbl']");
-	
 	By Filter_Apply_All = By.xpath("//div[@id='divHeader']//span[text()='Apply All'][@class='cd-panel-apply animated slideInDown border rounded border-primary bg-primary text-white sc-gbl px-2']|//div[@id='divHeader']//span[text()='Apply All'][@class='cd-panel-apply animated slideInDown border rounded border-primary bg-primary text-white sc-gbl px-2']");
 	
 	By Card = By.xpath("//span[text()='Card']");
@@ -111,6 +95,8 @@ public class Link_ValidationsPage extends DriverFactory {
 					
 	By Caserecords = By.xpath("//span[text()='Case Records']");
 	
+	By Validationscount = By.cssSelector("div#RecordsCount_Row1 > .text-size-medium");
+	
 	By validationsearchbox = By.xpath("//input[@id='selValidationName']");
 	
 	By groupbytypecheckbox = By.xpath("//input[@id='selShowHeader']");
@@ -118,6 +104,12 @@ public class Link_ValidationsPage extends DriverFactory {
 	By JimDrevalidation = By.xpath("//*[@id='Validation_Row1']//span[text()='JimD-revalidation']");
 	
 	By JimDrevalidation_close = By.xpath("//span[@class='cd-panel-close']");
+	
+	By saveicon = By.cssSelector("div#Save > .align-self-center.fa.fa-save.mt-1.p-1.text-dark");
+	
+	By save = By.xpath("//span[text()='Save']");
+	
+	By description = By.xpath("//input[@id='txtBookmarkDescription']");
 	
 	public void User_click_on_Validations_under_Hamburger_icon_in_Linkpage() throws Throwable {
 		utilities.webDriverWait(driver, linkhamburgericon);
@@ -203,6 +195,8 @@ public class Link_ValidationsPage extends DriverFactory {
 		driver.findElement(OneYearDatepicker).click();
 		utilities.webDriverWait(driver, Filter_OneYearDatepicker);
 		driver.findElement(Filter_OneYearDatepicker).click();
+		utilities.webDriverWait(driver, Validationscount);
+		driver.findElement(Validationscount).click();
 
 	}
 	
@@ -261,18 +255,26 @@ public class Link_ValidationsPage extends DriverFactory {
 		driver.findElement(Filter_PauseRefresh_CheckBox).click();
 		utilities.webDriverWait(driver, Filters_SavedFilters);
 		driver.findElement(Filters_SavedFilters).click();
+		utilities.webDriverWait(driver, saveicon);
+		driver.findElement(saveicon).click();
+		utilities.webDriverWait(driver, save);
+		driver.findElement(save).click();
+		driver.switchTo().alert().accept();
+		utilities.webDriverWait(driver, description);
+		driver.findElement(description).click();
+		utilities.webDriverWait(driver, description);
+		driver.findElement(description).sendKeys("sample saved filters");
+		utilities.webDriverWait(driver, save);
+		driver.findElement(save).click();
 		utilities.webDriverWait(driver, Filters_Records);
 		driver.findElement(Filters_Records).click();
 		utilities.webDriverWait(driver, Filters_Pass);
 		driver.findElement(Filters_Pass).click();
-		
 		utilities.webDriverWait(driver, Filter_BaseFilters_ShowOnlyFailedRecords);
 		driver.findElement(Filter_BaseFilters_ShowOnlyFailedRecords).click();
-		
 		utilities.webDriverWait(driver, Filter_BaseFilters_Forms);
 		driver.findElement(Filter_BaseFilters_Forms).click();
-		utilities.MediumWait(driver);
-		
+		utilities.webDriverWait(driver, Filter_BaseFilters_Forms);
 		driver.findElement(Filter_BaseFilters_Forms).click();
 		utilities.webDriverWait(driver, Filter_BaseFilters_Resources);
 		

@@ -16,6 +16,7 @@ Feature: feature to test Link Validations Page functionality
     Then User validates Printview button in Validations Page
     Then User validates Tasks button in Validations Page
     Then User validates Dynamicflowrecords button in Validations Page
+    Then User validates Caserecords button in Validations Page
     Then User validates Search box in Validations Page
     Then User validates Group By Type check box in Validations Page
     Then User validates Filters Under Validations Page

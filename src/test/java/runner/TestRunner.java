@@ -7,8 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber-html-report.html", "json:test-output-reports/JsonReport/report.json", "junit:test-output-reports/JunitReport/report.xml", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
 glue = "stepdefinition", 
-features = "features/Link_Records.feature", 
-monochrome = true, tags = "@SmokeTest1")
+features = "features/Link_LoginPage.feature", 
+monochrome = true, tags = "@SmokeTest")
 public class TestRunner {
 
 }
